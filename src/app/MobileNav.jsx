@@ -1,8 +1,11 @@
 'use client';
 
 import { useState } from "react";
-import { IoMdClose } from "react-icons/io";
+import { IoClose } from "react-icons/io5";
+import { RiCloseLargeLine } from "react-icons/ri";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import Link from "next/link";
 
 const navLinks = [
@@ -27,14 +30,18 @@ export default function MobileNav() {
                         <span id="title" className="inline-block skew-x-16">Donnell Fulwiler</span>
                     </span>
                 </span>
-                <button 
-                    onClick={() => setOpen(!open)}
-                    className="
-                    text-3xl focus:outline-none p-2 rounded-xs
-                    bg-linear-to-r from-green-300 to-teal-600
-                    hover:cursor-pointer transition-colors
-                ">
-                    {open ? <IoMdClose /> : <RxHamburgerMenu />}
+                
+                <button onClick={() => setOpen(!open)} className="focus:outline-none hover:cursor-pointer">
+                    <svg width="0" height="0">
+                        <linearGradient id="green-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                            <stop stopColor="#86efac" offset="0%" /> {/* green-300 */}
+                            <stop stopColor="#0d9488" offset="100%" /> {/* teal-600 */}
+                        </linearGradient>
+                    </svg>
+                    {open 
+                    ? <RiCloseLargeLine style={{ fill: "url(#green-gradient)" }} className="text-3xl" /> 
+                    : <GiHamburgerMenu style={{ fill: "url(#green-gradient)" }} className="text-3xl" />
+                    }
                 </button>
             </div>
 
