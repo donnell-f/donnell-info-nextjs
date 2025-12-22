@@ -3,29 +3,65 @@
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Link from "next/link";
+
+const navLinks = [
+    { label: "About", href: "/about" },
+    { label: "Projects", href: "/projects" },
+    { label: "Experience", href: "/experience" },
+];
 
 export default function MobileNav() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [open, setOpen] = useState(false);
 
     return (
-        <nav className={`
-        z-10 bg-gray-500 sticky ${isOpen ? "w-screen h-screen" : ""}
-        `}>
-            <div id="mobileTitle" className="grid grid-cols-3 place-items-center px-8 py-4">
-                <span id="spacer" className="text-3xl">&nbsp;</span>
-                <span className="font-bold text-xl">Donnell Fulwiler</span>
-                <div id="menuCollapse" onClick={() => setIsOpen(o => !o)}>
-                    { isOpen
-                      ? <IoMdClose className="text-3xl hover:text-white hover:cursor-pointer"/>
-                      : <RxHamburgerMenu className="text-3xl hover:text-white hover:cursor-pointer"/>}
-                    
-                </div>
+        <nav className="sticky top-0 left-0 w-full z-50 bg-[url('/papyrus.png')] text-white">
+            {/* Header Bar */}
+            <div className="flex justify-between items-center px-8 py-0 relative z-50">
+                <div className="w-6" /> {/* Spacer to center name */}
+                <span id="titleContainer" className="
+                    font-bold text-2xl whitespace-nowrap py-2 px-3 -skew-x-16
+                    bg-linear-to-r from-green-300 to-teal-600
+                ">
+                    <span id="titleSubContainer" className="inline-block shadow py-2 px-3">
+                        <span id="title" className="inline-block skew-x-16">Donnell Fulwiler</span>
+                    </span>
+                </span>
+                <button 
+                    onClick={() => setOpen(!open)}
+                    className="
+                    text-3xl focus:outline-none p-2
+                    bg-linear-to-r from-green-300 to-teal-600
+                    hover:text-gray-200 transition-colors
+                ">
+                    {open ? <IoMdClose /> : <RxHamburgerMenu />}
+                </button>
             </div>
-            <ul className={`${!isOpen ? "hidden" : ""} list-none text-2xl flex flex-col items-center justify-evenly`}>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Experience</li>
-            </ul>
+
+            {/* Animated Menu Overlay */}
+            <div className={`
+                absolute top-0 left-0 w-full h-screen bg-[url('/papyrus.png')]
+                flex flex-col items-center justify-center
+                transition-all duration-500 ease-in-out
+                ${open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full pointer-events-none"}
+            `}>
+                <ul className="flex flex-col gap-8 text-center">
+                    {navLinks.map((nl, i) => (
+                        <li 
+                            key={i} 
+                            className={`transform transition-transform duration-500 delay-${i * 100} ${open ? "translate-y-0" : "translate-y-10"}`}
+                        >
+                            <Link 
+                                href={nl.href} 
+                                onClick={() => setOpen(false)}
+                                className="text-3xl font-semibold hover:text-blue-300 transition-colors"
+                            >
+                                {nl.label}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </nav>
     );
 }
