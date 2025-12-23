@@ -6,7 +6,7 @@ export const metadata = {
     icons: {
         // Idk why this is a potted plant. I need to change it to something
         // better in the future.
-        icon: "favicon.png"
+        icon: "emerald.png"
     }
 };
 
