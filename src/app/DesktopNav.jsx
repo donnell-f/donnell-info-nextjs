@@ -12,7 +12,7 @@ export default function DesktopNav() {
             <Link href="/" id="desktopTitleWrapper" className="
                     group relative
                     inline-flex whitespace-nowrap py-5 px-10 grow-0 -skew-x-16 z-10
-                    bg-linear-to-r from-green-300 to-teal-600 
+                    bg-linear-to-r from-green-300 to-teal-600
                     hover:cursor-pointer
                     transition-all duration-500 ease-in-out
             ">

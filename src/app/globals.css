@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@utility mobile-hidden {
+    @apply hidden lg:block;
+}
+
 /* Default Tailwind stuff (useless, for now): */
 /* :root {
   --background: #ffffff;
