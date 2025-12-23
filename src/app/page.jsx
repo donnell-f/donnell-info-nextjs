@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link";
 
 const maxWidthPx = 1300;
 
@@ -31,28 +32,39 @@ export default function Home() {
                     didn&apos;t want anyone to think I vibe coded the website.</p>
                 </div>
             </section>
-            <div className="spacer my-8"></div>
-            <section id="socials" className="bg-linear-to-br from-green-200 to-teal-400 shadow-[0_0_7px_15px_white_inset] pt-8 pb-12">
-                <h1 className="text-center text-3xl my-4 font-medium">My Socials</h1>
+            <div id="socialsTop" className="mt-18 bg-[url('/wave2.svg')] bg-cover aspect-[960/100]"></div>
+            <section id="socials" className="bg-teal-300 pt-8 pb-12">
+                <h1 className="text-center text-4xl mt-4 mb-8 font-semibold text-white">My Socials</h1>
                 <div id="socialsContent" className="
-                    max-lg:flex max-lg:flex-col max-lg:gap-4 max-lg:items-stretch max-lg:justify-center
-                    lg:grid lg:grid-flow-col lg:auto-cols-fr lg:gap-8
-                    w-fit mx-auto
+                    max-lg:flex max-lg:flex-col max-lg:items-stretch max-lg:justify-center
+                    lg:grid lg:grid-flow-col lg:auto-cols-fr
+                    w-fit mx-auto gap-8
                 ">
-                    <div id="githubStyleDiv" className="bg-gradient-to-tr from-green-400 to-teal-700 rounded-2xl">
-                        <div id="github" className="p-6 m-1 flex flex-col items-center justify-center gap-4 bg-white rounded-2xl">
-                            <img src="/github.png" className="max-w-20" alt="GitHub" />
-                            <span className="font-mono text-xl">donnell-f</span>
-                        </div>
+                    <div id="githubStyleDiv" className="
+                        bg-gradient-to-tr from-green-100 to-teal-400 rounded-2xl
+                        hover:-translate-y-2 transition-all duration-300 ease-in-out
+                    ">
+                        <Link href="https://github.com/donnell-f" target="_blank">
+                            <div id="github" className="p-6 m-1 flex flex-col items-center justify-center gap-4 bg-white rounded-2xl">
+                                <img src="/github.png" className="max-w-20" alt="GitHub" />
+                                <span className="font-mono text-xl">donnell-f</span>
+                            </div>
+                        </Link>
                     </div>
-                    <div id="linkedinStyleDiv" className="bg-gradient-to-tr from-green-400 to-teal-700 rounded-2xl">
-                        <div id="linkedin" className="p-6 m-1 flex flex-col items-center justify-center gap-4 bg-white rounded-2xl">
-                            <img src="/linkedin.png" className="max-w-20" alt="LinkedIn" />
-                            <span className="font-mono text-xl">donnell-fulwiler</span>
-                        </div>
+                    <div id="linkedinStyleDiv" className="
+                        bg-gradient-to-tr from-green-100 to-teal-400 rounded-2xl
+                        hover:-translate-y-2 transition-all duration-300 ease-in-out
+                    ">
+                        <Link href="https://www.linkedin.com/in/donnell-fulwiler/" target="_blank">
+                            <div id="linkedin" className="p-6 m-1 flex flex-col items-center justify-center gap-4 bg-white rounded-2xl">
+                                <img src="/linkedin.png" className="max-w-20" alt="LinkedIn" />
+                                <span className="font-mono text-xl">donnell-fulwiler</span>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </section>
+            <div id="socialsBottom" className="mb-18 bg-[url('/wave2.svg')] transform-[scaleY(-1)_scaleX(-1)] bg-cover aspect-[960/100]"></div>
         </main>
     );
 }
