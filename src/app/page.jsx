@@ -7,6 +7,7 @@ const maxWidthPx = 1300;
 
 export default function Home() {
     return (
+        <>
         <main className="py-8">
             <section id="bio" className={`
                 px-8 max-w-[${maxWidthPx}px] ml-auto mr-auto
@@ -66,5 +67,9 @@ export default function Home() {
             </section>
             <div id="socialsBottom" className="mb-18 bg-[url('/wave2.svg')] transform-[scaleY(-1)_scaleX(-1)] bg-cover aspect-[960/100]"></div>
         </main>
+        <footer>
+            <div id="stackedWaves" className="bg-[url('/stacked_waves.svg')] bg-cover aspect-[1000/200]"></div>
+        </footer>
+        </>
     );
 }
