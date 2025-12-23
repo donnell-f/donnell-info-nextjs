@@ -21,7 +21,8 @@ export default function Home() {
                 </div>
                 <div id="profilePic" className="
                     max-lg:mt-8 min-h-[30rem]
-                    min-w-[2.5rem] min-h-[30rem]
+                    min-w-[1rem]
+                    object-center bg-center
                     bg-[url('/headshot.png')] bg-cover rounded-lg
                     col-[3/3] row-[2/5]
                 "/>
@@ -67,7 +68,7 @@ export default function Home() {
             </section>
             <div id="socialsBottom" className="mb-18 bg-[url('/wave2.svg')] transform-[scaleY(-1)_scaleX(-1)] bg-cover aspect-[960/100]"></div>
             <section id="endSection">
-                <h1 className="text-3xl font-semibold text-center mb-18">That&apos;s it for this page! Make sure to check out the other pages as well.</h1>
+                <h1 className="text-3xl font-semibold text-center mb-18 mx-4">That&apos;s it for this page! Make sure to check out the other pages as well.</h1>
             </section>
         </main>
         <footer>
