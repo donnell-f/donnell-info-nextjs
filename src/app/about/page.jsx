@@ -76,7 +76,7 @@ export default function AboutPage() {
     }, { scope: container });
 
     return (
-        <main ref={container} className="pt-18">
+        <main ref={container} className="pt-18 max-lg:px-3">
             <section id="hero" className="
                 max-w-[1200px] mx-auto grid
                 lg:grid-rows-[2rem_minmax(10rem,1fr)_2rem] lg:grid-cols-[minmax(10rem,1fr)_2rem_1fr_2rem]
@@ -124,8 +124,8 @@ export default function AboutPage() {
                 ">
                     <div id="annoyingLinkContainer" className="
                         absolute right-2 top-2 p-2 rounded-lg bg-teal-500/15
-                        opacity-0 translate-y-4
-                        group-hover:opacity-100 group-hover:translate-y-0
+                        lg:opacity-0 lg:translate-y-4
+                        lg:group-hover:opacity-100 lg:group-hover:translate-y-0
                         duration-200 ease-in
                     ">
                         <LuExternalLink className="relative text-2xl" />
