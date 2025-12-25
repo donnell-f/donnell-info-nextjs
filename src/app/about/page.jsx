@@ -4,6 +4,8 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
 import LogoLoop from './LogoLoop';
+import { LuExternalLink } from "react-icons/lu";
+
 
 import { 
   SiReact, 
@@ -15,6 +17,7 @@ import {
   SiGit,
   SiGreensock 
 } from 'react-icons/si';
+import Link from 'next/link';
 
 const techLogos = [
   { node: <SiReact />, title: "React", href: "https://react.dev" },
@@ -106,15 +109,28 @@ export default function AboutPage() {
                 lg:grid-rows-[2rem_minmax(10rem,1fr)_2rem] lg:grid-cols-[2rem_1fr_2rem_minmax(10rem,1fr)]
                 max-lg:grid-rows-[minmax(10rem,1fr)_2rem_minmax(10rem,1fr)] max-lg:grid-cols-[2rem_minmax(10rem,1fr)_2rem]
             ">
-                <div id="techPic" className="
+                {/* "Poor man's link" with onClick bc I don't want to wrap this whole thing in a Link */}
+                <div id="techPic"
+                onClick={() => window.open("https://github.com/donnell-f/donnell-info-nextjs", "_blank", "noreferrer")}
+                role="link"
+                className="
+                    relative group
                     lg:row-[2/2] lg:col-[3/span_2]
                     max-lg:row-[1/span_2] max-lg:col-[2/2]
-                    bg-[url('/tech.png')] bg-cover rounded-2xl bg-center min-h-[30rem]
-                    lg:hover:translate-x-16
-                    max-lg:hover:-translate-y-4
+                    bg-[url('/about_source.png')] bg-cover rounded-2xl bg-center min-h-[30rem] border-2
+                    lg:hover:translate-x-16 max-lg:hover:-translate-y-4 hover:cursor-pointer
                     transition-all duration-300 ease-in-out
                     hover:shadow-2xl
-                "></div>
+                ">
+                    <div id="annoyingLinkContainer" className="
+                        absolute right-2 top-2 p-2 rounded-lg bg-teal-500/15
+                        opacity-0 translate-y-4
+                        group-hover:opacity-100 group-hover:translate-y-0
+                        duration-200 ease-in
+                    ">
+                        <LuExternalLink className="relative text-2xl" />
+                    </div>
+                </div>
                 <div id="heroDesc2" ref={techDesc} className="
                     flex flex-col items-center justify-center
                     max-lg:row-[2/span_2] max-lg:col-[1/span_3]
