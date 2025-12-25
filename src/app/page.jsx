@@ -3,14 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const maxWidthPx = 1300;
-
 export default function Home() {
     return (
         <>
         <main className="py-8">
             <section id="bio" className={`
-                px-8 max-w-[${maxWidthPx}px] ml-auto mr-auto
+                px-8 max-w-[1300px] ml-auto mr-auto
                 lg:grid grid-cols-[3rem_3rem_1fr_1fr_3rem] grid-rows-[3rem_minmax(15rem,1fr)_3rem_minmax(15rem,1fr)_3rem]
             `}>
                 <div id="bgPanel" className="mobile-hidden col-[2/-1] row-[2/-1] bg-gray-100 rounded-lg"></div>
@@ -21,15 +19,13 @@ export default function Home() {
                 </div>
                 <div id="profilePic" className="
                     max-lg:mt-8 min-h-[30rem]
-                    min-w-[1rem]
-                    object-center bg-center
-                    bg-[url('/headshot.png')] bg-cover rounded-lg
+                    bg-[url('/headshot.png')] bg-cover rounded-lg bg-center
                     col-[3/3] row-[2/5]
                 "/>
                 <div id="bioText" className="p-8 col-[4/4] row-[4/4]">
                     <p className="text-center text-xl">Hello, I am Donnell
                     Fulwiler. I am a thinker, creator, innovator, artist, idea.
-                    You may be wondering why I chose the emerald green theme for this
+                    You may be wondering why I chose the turquoise theme for this
                     website. I was actually going to use a blue gradient, but I
                     didn&apos;t want anyone to think I vibe coded the website.</p>
                 </div>

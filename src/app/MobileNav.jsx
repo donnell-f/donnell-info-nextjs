@@ -9,6 +9,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
 
 const navLinks = [
+    { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Projects", href: "/projects" },
     { label: "Experience", href: "/experience" },
