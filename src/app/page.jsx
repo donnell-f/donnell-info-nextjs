@@ -30,6 +30,13 @@ export default function Home() {
                     didn&apos;t want anyone to think I vibe coded the website.</p>
                 </div>
             </section>
+            <div id="spacer" className="my-18"></div>
+            <section id="resume">
+                <h1 className="text-center text-3xl font-semibold my-8">My Resume</h1>
+                {/* <div id="resumeContainer" className="grid grid-cols-1 mx-auto w-full"> */}
+                    <embed src="donnell_fulwiler_resume.pdf#toolbar=0&navpanes=0" type="application/pdf" className="mx-auto w-full max-w-[900px] aspect-[10/12]"/>
+                {/* </div> */}
+            </section>
             <div id="socialsTop" className="mt-18 bg-[url('/wave2.svg')] bg-cover aspect-[960/100]"></div>
             <section id="socials" className="bg-teal-300 pt-8 pb-12">
                 <h1 className="text-center text-4xl mt-4 mb-8 font-semibold text-white">My Socials</h1>
