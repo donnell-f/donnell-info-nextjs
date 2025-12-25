@@ -23,14 +23,14 @@ export default function MobileNav() {
             {/* Header part */}
             <div className="flex justify-between items-center px-4 py-0 relative z-50">
                 <div className="w-6" /> {/* Spacer to center title */}
-                <span id="titleContainer" className="
+                <Link id="titleContainer" href="/" className="
                     font-bold text-xl whitespace-nowrap py-2 px-3 -skew-x-16
                     bg-linear-to-r from-green-300 to-teal-600
                 ">
                     <span id="titleSubContainer" className="inline-block shadow py-2 px-3">
                         <span id="title" className="inline-block skew-x-16">Donnell Fulwiler</span>
                     </span>
-                </span>
+                </Link>
                 
                 <button onClick={() => setOpen(!open)} className="focus:outline-none hover:cursor-pointer">
                     <svg width="0" height="0">

@@ -1,4 +1,4 @@
-# Donnell Fulwiler Portfolio
+# My Portfolio -- donnell.info
 
 This is the source code for my personal portfolio site, `donnell.info`. This repo houses the content, layouts, and animations that power the site, plus reusable UI components.
 
