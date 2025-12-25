@@ -63,7 +63,10 @@ export default function Home() {
                 {/* </div> */}
             </section>
             <section id="socials" className="my-20">
-                <div id="annoyingSectionWrapper" className={`overflow-visible bg-[url('/wavy_bridge_blur.svg')] p-18`}>
+                <div id="annoyingSectionWrapper" className={`
+                    overflow-visible bg-[url('/wavy_bridge_blur.svg')] p-18
+                    bg-size-[115%] bg-cover bg-center
+                `}>
                     <div id="annoyingTitleContainer" className="flex items-center justify-center">
                         <h1 className="text-center text-4xl mt-4 mb-8 font-semibold text-white bg-blue-100/30 p-5 rounded-2xl">My Socials</h1>
                     </div>
