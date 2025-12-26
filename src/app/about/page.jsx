@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
 import LogoLoop from './LogoLoop';
 import { LuExternalLink } from "react-icons/lu";
+import Dither from '../Dither';
 
 
 import { 
@@ -77,6 +78,17 @@ export default function AboutPage() {
 
     return (
         <main ref={container} className="pt-18 max-lg:px-3">
+            <Dither
+                waveColor={[0.5, 0.5, 0.5]}
+                disableAnimation={false}
+                enableMouseInteraction={true}
+                mouseRadius={0.3}
+                colorNum={4}
+                waveAmplitude={0.3}
+                waveFrequency={3}
+                waveSpeed={0.05}
+            />
+
             <section id="hero" className="
                 max-w-[1200px] mx-auto grid
                 lg:grid-rows-[2rem_minmax(10rem,1fr)_2rem] lg:grid-cols-[minmax(10rem,1fr)_2rem_1fr_2rem]

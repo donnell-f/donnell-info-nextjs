@@ -3,6 +3,7 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
+import Dither from './Dither';
 
 import Image from "next/image";
 import Link from "next/link";
@@ -32,6 +33,17 @@ export default function Home() {
 
     return (
         <main ref={container} className="pt-8">
+            <Dither
+                waveColor={[0.5, 0.5, 0.5]}
+                disableAnimation={false}
+                enableMouseInteraction={true}
+                mouseRadius={0.3}
+                colorNum={4}
+                waveAmplitude={0.3}
+                waveFrequency={3}
+                waveSpeed={0.05}
+            />
+
             <section id="bio" className={`
                 px-8 max-w-[1300px] ml-auto mr-auto
                 lg:grid grid-cols-[3rem_3rem_1fr_1fr_3rem] grid-rows-[3rem_minmax(15rem,1fr)_3rem_minmax(15rem,1fr)_3rem]
@@ -55,13 +67,12 @@ export default function Home() {
                     didn&apos;t want anyone to think I vibe coded the website.</p>
                 </div>
             </section>
-            <div id="spacer" className="my-18"></div>
+            <div id="spacer" className="my-24"></div>
             <section id="resume">
                 <h1 className="text-center text-3xl font-semibold my-8">My Resume</h1>
-                {/* <div id="resumeContainer" className="grid grid-cols-1 mx-auto w-full"> */}
-                    <embed src="donnell_fulwiler_resume.pdf#toolbar=0&navpanes=0" type="application/pdf" className="mx-auto w-full max-w-[900px] aspect-[10/12]"/>
-                {/* </div> */}
+                <embed src="donnell_fulwiler_resume.pdf#toolbar=0&navpanes=0" type="application/pdf" className="mx-auto w-full max-w-[900px] aspect-[10/12]"/>
             </section>
+            <div id="spacer" className="my-28"></div>
             <section id="socials" className="my-20">
                 <div id="annoyingSectionWrapper" className={`
                     overflow-visible bg-[url('/wavy_bridge_blur.svg')] p-18
@@ -100,15 +111,10 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            {/* <div id="socialsTop" className="mt-18 bg-[url('/wave2.svg')] bg-cover aspect-[960/100]"></div>
-            <div id="socialsBottom" className="mb-18 bg-[url('/wave2.svg')] transform-[scaleY(-1)_scaleX(-1)] bg-cover aspect-[960/100]"></div> */}
+            <div id="spacer" className="my-30"></div>
             <section id="endSection">
                 <h1 className="text-3xl font-semibold text-center mb-18 mx-4">That&apos;s it for this page! Make sure to check out the other pages as well.</h1>
             </section>
-            {/* w-full h-full block */}
-            <footer>
-                <div id="stackedWaves" className="bg-[url('/stacked_waves.svg')] bg-cover aspect-[1000/200]"></div>
-            </footer>
         </main>
     );
 }
