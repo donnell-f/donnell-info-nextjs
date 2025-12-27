@@ -36,7 +36,7 @@ export default function Home() {
             <Dither
                 waveColor={[0.5, 0.5, 0.5]}
                 disableAnimation={false}
-                enableMouseInteraction={true}
+                enableMouseInteraction={false}
                 mouseRadius={0.3}
                 colorNum={4}
                 waveAmplitude={0.3}
@@ -75,9 +75,13 @@ export default function Home() {
             <div id="spacer" className="my-28"></div>
             <section id="socials" className="my-20">
                 <div id="annoyingSectionWrapper" className={`
-                    overflow-visible bg-[url('/wavy_bridge_blur.svg')] p-18
-                    bg-size-[115%] bg-cover bg-center
+                    relative overflow-visible p-18
                 `}>
+                    <div id="disembodiedBackground" className="
+                        absolute left-0 top-0 w-full h-full -z-10
+                        bg-[url('/wavy_bridge_blur.svg')] bg-size-[110%] bg-cover bg-center
+                        opacity-80 blur-xs
+                    "/>
                     <div id="annoyingTitleContainer" className="flex items-center justify-center">
                         <h1 className="text-center text-4xl mt-4 mb-8 font-semibold text-white bg-blue-100/30 p-5 rounded-2xl">My Socials</h1>
                     </div>
