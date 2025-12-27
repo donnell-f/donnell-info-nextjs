@@ -102,7 +102,7 @@ export default function Home() {
                             <Link href="https://github.com/donnell-f" target="_blank" className="block border-4 rounded-3xl border-gray-700">
                                 <div id="github" className="p-6 m-1 flex flex-col items-center justify-center gap-4 bg-white rounded-2xl">
                                     <img src="/github.png" className="max-w-20" alt="GitHub" />
-                                    <span className="font-mono text-xl">donnell-f</span>
+                                    <span className="font-mono text-xl text-nowrap">donnell-f</span>
                                 </div>
                             </Link>
                         </div>
@@ -113,7 +113,7 @@ export default function Home() {
                             <Link href="https://www.linkedin.com/in/donnell-fulwiler/" target="_blank" className="block border-4 rounded-3xl border-gray-700">
                                 <div id="linkedin" className="p-6 m-1 flex flex-col items-center justify-center gap-4 bg-white rounded-2xl">
                                     <img src="/linkedin.png" className="max-w-20" alt="LinkedIn" />
-                                    <span className="font-mono text-xl">donnell-fulwiler</span>
+                                    <span className="font-mono text-xl text-nowrap">donnell-fulwiler</span>
                                 </div>
                             </Link>
                         </div>
