@@ -57,7 +57,7 @@ export default function ProjectsPage() {
                 inscription so that it can be more easily translated.
             </ProjectTab>
 
-            <ProjectTab title="Gradescope Sleuth (2025)" imgSrc="/gradescope_sleuth.png" direction="right" skills={["Python", "SQL", "Web Scraping", "Selenium", "Data Science"]} ref={p2Ref}>
+            {/* <ProjectTab title="Gradescope Sleuth (2025)" imgSrc="/gradescope_sleuth.png" direction="right" skills={["Python", "SQL", "Web Scraping", "Selenium", "Data Science"]} ref={p2Ref}>
                 I designed this tool while working as a TA for CSCE 120, so that
                 it would be easier to catch students who were blatantly using AI
                 to cheat on their homework. It has been a huge success, as it
@@ -79,7 +79,7 @@ export default function ProjectsPage() {
                 euismod dapibus mi, ac lobortis tellus convallis ornare.
                 Aliquam at augue ut arcu posuere faucibus. Aliquam nibh
                 urna, molestie a lacus egestas, pellentesque pulvinar nisi.
-            </ProjectTab>
+            </ProjectTab> */}
 
         </main>
     );
