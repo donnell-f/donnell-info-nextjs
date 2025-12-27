@@ -24,11 +24,12 @@ export default function ProjectsPage() {
             const xFrom = (i % 2 == 0) ? "-100%" : "100%";
             gsap.from(refVal.current, {
                 x: xFrom,
-                duration: 0.65,
+                duration: 0.50,
+                ease: 'sine.in',
                 scrollTrigger: {
                     trigger: refVal.current,
                     start: 'top 80%',
-
+                    toggleActions: 'play none none reverse'
                 }
             });
         }

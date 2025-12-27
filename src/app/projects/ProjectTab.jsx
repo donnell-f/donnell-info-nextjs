@@ -7,8 +7,8 @@ function DesktopProjectTab({ title, imgSrc, githubLink, direction, skills, ref, 
     return (
         <div id="desktopContent" className={
             isLeft
-            ?  `${className} max-h-[95vh] grid grid-rows-1 grid-cols-[1fr_25vw_8vw]`
-            :  `${className} max-h-[95vh] grid grid-rows-1 grid-cols-[8vw_25vw_1fr]`
+            ?  `${className} max-h-[95vh] grid grid-rows-1 grid-cols-[1fr_35vw_8vw]`
+            :  `${className} max-h-[95vh] grid grid-rows-1 grid-cols-[8vw_35vw_1fr]`
         }>
             <div id="contentBg" className={
                 isLeft
@@ -17,8 +17,8 @@ function DesktopProjectTab({ title, imgSrc, githubLink, direction, skills, ref, 
             } />
             <div id="textContent" className={
                 isLeft
-                ? "row-[1/span_1] col-[1/span_1] flex flex-col items-center justify-evenly gap-6 p-10 min-h-[50vh]"
-                : "row-[1/span_1] col-[3/span_1] flex flex-col items-center justify-evenly gap-6 p-10 min-h-[50vh]"
+                ? "row-[1/span_1] col-[1/span_1] flex flex-col items-center justify-evenly gap-6 p-10 min-h-[60vh]"
+                : "row-[1/span_1] col-[3/span_1] flex flex-col items-center justify-evenly gap-6 p-10 min-h-[60vh]"
             }>
                 <h1 className="text-center text-3xl font-semibold text-white">{title}</h1>
                 <p className="text-2xl text-center text-white">{children}</p>

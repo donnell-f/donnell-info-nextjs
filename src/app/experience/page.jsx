@@ -3,7 +3,7 @@ import Dither from "../Dither";
 
 export default function ExperiencePage() {
     return (
-        <main className="-z-60">
+        <main className="lg:p-12 max-lg:p-4">
             <Dither
                 waveColor={[0.5, 0.5, 0.5]}
                 disableAnimation={false}
@@ -14,115 +14,20 @@ export default function ExperiencePage() {
                 waveFrequency={3}
                 waveSpeed={0.05}
             />
-            <h1 className="text-3xl font-semibold bg-green-200/20 rounded-2xl text-center">Hello there!</h1>
-            <p className="text-xl font-medium text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            volutpat enim ipsum, quis pulvinar odio varius euismod. Aenean et
-            neque feugiat, vulputate nulla id, imperdiet lacus. Ut eget lectus
-            sed elit auctor scelerisque sed quis neque. Fusce tincidunt dui at
-            dapibus luctus. Aenean massa tortor, tristique ut dictum eget,
-            finibus consectetur quam. Fusce pharetra fermentum est, ut lobortis
-            est. Integer elementum purus ut velit suscipit, ut mollis lectus
-            cursus. Integer et viverra sem. Ut quis enim pretium, molestie enim
-            non, dignissim nunc. Integer suscipit lacus vitae nulla lacinia, sed
-            sodales nisi lacinia. Aliquam euismod dapibus mi, ac lobortis tellus
-            convallis ornare. Aliquam at augue ut arcu posuere faucibus. Aliquam
-            nibh urna, molestie a lacus egestas, pellentesque pulvinar nisi.</p>
-            <p className="text-xl font-medium text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            volutpat enim ipsum, quis pulvinar odio varius euismod. Aenean et
-            neque feugiat, vulputate nulla id, imperdiet lacus. Ut eget lectus
-            sed elit auctor scelerisque sed quis neque. Fusce tincidunt dui at
-            dapibus luctus. Aenean massa tortor, tristique ut dictum eget,
-            finibus consectetur quam. Fusce pharetra fermentum est, ut lobortis
-            est. Integer elementum purus ut velit suscipit, ut mollis lectus
-            cursus. Integer et viverra sem. Ut quis enim pretium, molestie enim
-            non, dignissim nunc. Integer suscipit lacus vitae nulla lacinia, sed
-            sodales nisi lacinia. Aliquam euismod dapibus mi, ac lobortis tellus
-            convallis ornare. Aliquam at augue ut arcu posuere faucibus. Aliquam
-            nibh urna, molestie a lacus egestas, pellentesque pulvinar nisi.</p>
-            <p className="text-xl font-medium text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            volutpat enim ipsum, quis pulvinar odio varius euismod. Aenean et
-            neque feugiat, vulputate nulla id, imperdiet lacus. Ut eget lectus
-            sed elit auctor scelerisque sed quis neque. Fusce tincidunt dui at
-            dapibus luctus. Aenean massa tortor, tristique ut dictum eget,
-            finibus consectetur quam. Fusce pharetra fermentum est, ut lobortis
-            est. Integer elementum purus ut velit suscipit, ut mollis lectus
-            cursus. Integer et viverra sem. Ut quis enim pretium, molestie enim
-            non, dignissim nunc. Integer suscipit lacus vitae nulla lacinia, sed
-            sodales nisi lacinia. Aliquam euismod dapibus mi, ac lobortis tellus
-            convallis ornare. Aliquam at augue ut arcu posuere faucibus. Aliquam
-            nibh urna, molestie a lacus egestas, pellentesque pulvinar nisi.</p>
-            <p className="text-xl font-medium text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            volutpat enim ipsum, quis pulvinar odio varius euismod. Aenean et
-            neque feugiat, vulputate nulla id, imperdiet lacus. Ut eget lectus
-            sed elit auctor scelerisque sed quis neque. Fusce tincidunt dui at
-            dapibus luctus. Aenean massa tortor, tristique ut dictum eget,
-            finibus consectetur quam. Fusce pharetra fermentum est, ut lobortis
-            est. Integer elementum purus ut velit suscipit, ut mollis lectus
-            cursus. Integer et viverra sem. Ut quis enim pretium, molestie enim
-            non, dignissim nunc. Integer suscipit lacus vitae nulla lacinia, sed
-            sodales nisi lacinia. Aliquam euismod dapibus mi, ac lobortis tellus
-            convallis ornare. Aliquam at augue ut arcu posuere faucibus. Aliquam
-            nibh urna, molestie a lacus egestas, pellentesque pulvinar nisi.</p>
-            <p className="text-xl font-medium text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            volutpat enim ipsum, quis pulvinar odio varius euismod. Aenean et
-            neque feugiat, vulputate nulla id, imperdiet lacus. Ut eget lectus
-            sed elit auctor scelerisque sed quis neque. Fusce tincidunt dui at
-            dapibus luctus. Aenean massa tortor, tristique ut dictum eget,
-            finibus consectetur quam. Fusce pharetra fermentum est, ut lobortis
-            est. Integer elementum purus ut velit suscipit, ut mollis lectus
-            cursus. Integer et viverra sem. Ut quis enim pretium, molestie enim
-            non, dignissim nunc. Integer suscipit lacus vitae nulla lacinia, sed
-            sodales nisi lacinia. Aliquam euismod dapibus mi, ac lobortis tellus
-            convallis ornare. Aliquam at augue ut arcu posuere faucibus. Aliquam
-            nibh urna, molestie a lacus egestas, pellentesque pulvinar nisi.</p>
-            <p className="text-xl font-medium text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            volutpat enim ipsum, quis pulvinar odio varius euismod. Aenean et
-            neque feugiat, vulputate nulla id, imperdiet lacus. Ut eget lectus
-            sed elit auctor scelerisque sed quis neque. Fusce tincidunt dui at
-            dapibus luctus. Aenean massa tortor, tristique ut dictum eget,
-            finibus consectetur quam. Fusce pharetra fermentum est, ut lobortis
-            est. Integer elementum purus ut velit suscipit, ut mollis lectus
-            cursus. Integer et viverra sem. Ut quis enim pretium, molestie enim
-            non, dignissim nunc. Integer suscipit lacus vitae nulla lacinia, sed
-            sodales nisi lacinia. Aliquam euismod dapibus mi, ac lobortis tellus
-            convallis ornare. Aliquam at augue ut arcu posuere faucibus. Aliquam
-            nibh urna, molestie a lacus egestas, pellentesque pulvinar nisi.</p>
-            <p className="text-xl font-medium text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            volutpat enim ipsum, quis pulvinar odio varius euismod. Aenean et
-            neque feugiat, vulputate nulla id, imperdiet lacus. Ut eget lectus
-            sed elit auctor scelerisque sed quis neque. Fusce tincidunt dui at
-            dapibus luctus. Aenean massa tortor, tristique ut dictum eget,
-            finibus consectetur quam. Fusce pharetra fermentum est, ut lobortis
-            est. Integer elementum purus ut velit suscipit, ut mollis lectus
-            cursus. Integer et viverra sem. Ut quis enim pretium, molestie enim
-            non, dignissim nunc. Integer suscipit lacus vitae nulla lacinia, sed
-            sodales nisi lacinia. Aliquam euismod dapibus mi, ac lobortis tellus
-            convallis ornare. Aliquam at augue ut arcu posuere faucibus. Aliquam
-            nibh urna, molestie a lacus egestas, pellentesque pulvinar nisi.</p>
-            <p className="text-xl font-medium text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            volutpat enim ipsum, quis pulvinar odio varius euismod. Aenean et
-            neque feugiat, vulputate nulla id, imperdiet lacus. Ut eget lectus
-            sed elit auctor scelerisque sed quis neque. Fusce tincidunt dui at
-            dapibus luctus. Aenean massa tortor, tristique ut dictum eget,
-            finibus consectetur quam. Fusce pharetra fermentum est, ut lobortis
-            est. Integer elementum purus ut velit suscipit, ut mollis lectus
-            cursus. Integer et viverra sem. Ut quis enim pretium, molestie enim
-            non, dignissim nunc. Integer suscipit lacus vitae nulla lacinia, sed
-            sodales nisi lacinia. Aliquam euismod dapibus mi, ac lobortis tellus
-            convallis ornare. Aliquam at augue ut arcu posuere faucibus. Aliquam
-            nibh urna, molestie a lacus egestas, pellentesque pulvinar nisi.</p>
-            <p className="text-xl font-medium text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            volutpat enim ipsum, quis pulvinar odio varius euismod. Aenean et
-            neque feugiat, vulputate nulla id, imperdiet lacus. Ut eget lectus
-            sed elit auctor scelerisque sed quis neque. Fusce tincidunt dui at
-            dapibus luctus. Aenean massa tortor, tristique ut dictum eget,
-            finibus consectetur quam. Fusce pharetra fermentum est, ut lobortis
-            est. Integer elementum purus ut velit suscipit, ut mollis lectus
-            cursus. Integer et viverra sem. Ut quis enim pretium, molestie enim
-            non, dignissim nunc. Integer suscipit lacus vitae nulla lacinia, sed
-            sodales nisi lacinia. Aliquam euismod dapibus mi, ac lobortis tellus
-            convallis ornare. Aliquam at augue ut arcu posuere faucibus. Aliquam
-            nibh urna, molestie a lacus egestas, pellentesque pulvinar nisi.</p>
+           <section id="experience1" className="max-w-[1200px] bg-gray-50/80 rounded-xl mx-auto">
+                <div id="experienceHeader" className="rounded-t-xl p-12 border-2 border-black">
+                    <h1 className="text-3xl font-semibold text-center">Kaizen Action LLC. (2025)</h1>
+                </div>
+                <div id="experienceBody" className="leading-loose space-y-4 rounded-b-xl p-12 border-l-2 border-r-2 border-b-2 border-l-black border-r-black border-b-black">
+                    <p className="text-xl">I worked at Kaizen Action LLC. remotely in the Summer of 2025. At this internship, I did the following things:</p>
+                    <ul className="list-disc ml-8 space-y-4">
+                        <li className="text-xl">Engineered and backtested tactical trading algorithms on equities, with several strategies achieving over 15% simulated ROI.</li>
+                        <li className="text-xl">Processed multi-gigabyte financial time series in Python (pandas, NumPy) to clean, aggregate, and engineer features at scale.</li>
+                        <li className="text-xl">Applied econometric models (ARMA/ARIMA, GARCH, EGARCH) to capture volatility clustering and trends, reaching up to 85% accuracy on selected classification tasks.</li>
+                        <li className="text-xl">Experimented with TensorFlow-based Hidden Markov Models to model regime shifts and improve trading signal robustness</li>
+                    </ul>
+                </div>
+            </section>
         </main>
     );
 }
