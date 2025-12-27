@@ -159,9 +159,6 @@ export default function AboutPage() {
                     <LogoLoop logos={techLogos} speed={15}/>
                 </div>
             </section>
-            <footer className="text-center mt-20 mb-16">
-                Copyright Donnell Fulwiler 2025 ©
-            </footer>
         </main>
     );
 }
