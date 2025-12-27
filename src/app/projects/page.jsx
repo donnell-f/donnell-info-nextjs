@@ -24,7 +24,7 @@ export default function ProjectsPage() {
             const xFrom = (i % 2 == 0) ? "-100%" : "100%";
             gsap.from(refVal.current, {
                 x: xFrom,
-                duration: 1,
+                duration: 0.65,
                 scrollTrigger: {
                     trigger: refVal.current,
                     start: 'top 80%',
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
     }, { scope: container });
 
     return (
-        <main className="pt-0" ref={container}>
+        <main className="pt-0 pb-5" ref={container}>
             {/* Background, not in flow. */}
             <Dither
                 waveColor={[0.5, 0.5, 0.5]}
@@ -49,7 +49,7 @@ export default function ProjectsPage() {
                 waveSpeed={0.05}
             />
 
-            <ProjectTab title="Gjallarhorn (2017)" imgSrc="/gjallarhorn.png" direction="left" skills={["C#", ".NET", "MS Forms", "OOP"]} ref={p1Ref}>
+            <ProjectTab title="Gjallarhorn (2017)" imgSrc="/gjallarhorn.png" githubLink="https://github.com/donnell-f/Gjallarhorn-Rune-Translator" direction="left" skills={["C#", ".NET", "MS Forms", "OOP"]} ref={p1Ref}>
                 Gjallarhorn is a Rune transliterator I built that can
                 transliterate between any unicode-supported Runic alphabet. It
                 was built in MS Forms with C#. Gjallarhorn allows fans of old
@@ -57,29 +57,19 @@ export default function ProjectsPage() {
                 inscription so that it can be more easily translated.
             </ProjectTab>
 
-            {/* <ProjectTab title="Gradescope Sleuth (2025)" imgSrc="/gradescope_sleuth.png" direction="right" skills={["Python", "SQL", "Web Scraping", "Selenium", "Data Science"]} ref={p2Ref}>
+            <ProjectTab title="Gradescope Sleuth (2025)" imgSrc="/gradescope_sleuth.png" githubLink="https://github.com/donnell-f/gradescope-sleuth" direction="right" skills={["Python", "SQL", "Web Scraping", "Selenium", "Data Science"]} ref={p2Ref}>
                 I designed this tool while working as a TA for CSCE 120, so that
                 it would be easier to catch students who were blatantly using AI
                 to cheat on their homework. It has been a huge success, as it
                 led to us catching 10x more cheaters per assignment.
             </ProjectTab>
 
-            <ProjectTab title="Sample Text" imgSrc="https://picsum.photos/700/700" direction="left" skills={["React", "Tailwind", "CSS"]} ref={p3Ref}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam volutpat enim ipsum, quis pulvinar odio varius
-                euismod. Aenean et neque feugiat, vulputate nulla id,
-                imperdiet lacus. Ut eget lectus sed elit auctor scelerisque
-                sed quis neque. Fusce tincidunt dui at dapibus luctus.
-                Aenean massa tortor, tristique ut dictum eget, finibus
-                consectetur quam. Fusce pharetra fermentum est, ut lobortis
-                est. Integer elementum purus ut velit suscipit, ut mollis
-                lectus cursus. Integer et viverra sem. Ut quis enim pretium,
-                molestie enim non, dignissim nunc. Integer suscipit lacus
-                vitae nulla lacinia, sed sodales nisi lacinia. Aliquam
-                euismod dapibus mi, ac lobortis tellus convallis ornare.
-                Aliquam at augue ut arcu posuere faucibus. Aliquam nibh
-                urna, molestie a lacus egestas, pellentesque pulvinar nisi.
-            </ProjectTab> */}
+            <ProjectTab title="This Website (2025)" imgSrc="/donnell_info.png" githubLink="https://github.com/donnell-f/donnell-info-nextjs" direction="left" skills={["React", "Next.js", "Tailwind", "SSR", "GSAP", "Servers"]} ref={p3Ref}>
+                I would consider this website a personal project worth listing.
+                I built it in Next.js with Tailwind. I leveraged Next&apos;s built-in
+                SSR to enhance SEO and performance. Shoutout to React Bits for
+                the background.
+            </ProjectTab>
 
         </main>
     );

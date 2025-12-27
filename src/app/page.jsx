@@ -48,9 +48,14 @@ export default function Home() {
                 px-8 max-w-[1300px] ml-auto mr-auto
                 lg:grid grid-cols-[3rem_3rem_1fr_1fr_3rem] grid-rows-[3rem_minmax(15rem,1fr)_3rem_minmax(15rem,1fr)_3rem]
             `}>
-                <div id="bgPanel" ref={bgPanel} className="mobile-hidden -z-10 col-[2/-1] row-[2/-1] bg-gray-100 rounded-lg"></div>
-                <div id="stylePanel" ref={stylePanel} className="-z-10 col-[1/-2] row-[1/3] bg-linear-to-tr from-green-100 to-teal-300 rounded-lg"></div>
-                <div id="welcome" className="col-[4/4] row-[1/3] height-full flex flex-col items-center justify-center gap-6">
+                <div id="bgPanel" ref={bgPanel} className="-z-50 mobile-hidden col-[2/-1] row-[2/-1] bg-white border-2 rounded-lg"></div>
+                <div id="stylePanel" ref={stylePanel} className="-z-20 col-[1/-2] row-[1/3] bg-linear-to-tr from-green-400/50 to-teal-500/50 rounded-lg"></div>
+                <div id="welcome" className="relative col-[4/4] row-[1/3] height-full flex flex-col items-center justify-center gap-6">
+                    <div id="
+                        welcomeBgBlur" className="-z-35 absolute top-[1rem] left-[1rem] w-[calc(100%-2rem)] h-[calc(100%-2rem)]
+                        bg-linear-to-r from-green-200 to-teal-400 rounded-xl blur-xl
+                        max-lg:hidden
+                    "/>
                     <h1 className="text-5xl font-semibold text-center">Welcome</h1>
                     <p className="max-lg:hidden text-center text-xl">Welcome to my website!</p>
                 </div>
@@ -80,10 +85,10 @@ export default function Home() {
                     <div id="disembodiedBackground" className="
                         absolute left-0 top-0 w-full h-full -z-10
                         bg-[url('/wavy_bridge_blur.svg')] bg-size-[110%] bg-cover bg-center
-                        opacity-80 blur-xs
+                        opacity-50 blur-xs
                     "/>
                     <div id="annoyingTitleContainer" className="flex items-center justify-center">
-                        <h1 className="text-center text-4xl mt-4 mb-8 font-semibold text-white bg-blue-100/30 p-5 rounded-2xl">My Socials</h1>
+                        <h1 className="text-center text-4xl mt-4 mb-8 font-semibold text-black shadow-2xl p-5 rounded-2xl">My Socials</h1>
                     </div>
                     <div id="socialsContent" className="
                         max-lg:flex max-lg:flex-col max-lg:items-stretch max-lg:justify-center
@@ -91,10 +96,10 @@ export default function Home() {
                         w-fit mx-auto gap-8
                     ">
                         <div id="githubStyleDiv" className="
-                            bg-gradient-to-tr from-green-100 to-teal-400 rounded-2xl
-                            hover:-translate-y-2 transition-all duration-300 ease-in-out
+                            bg-gray-300/50 rounded-3xl
+                            hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 ease-in-out
                         ">
-                            <Link href="https://github.com/donnell-f" target="_blank">
+                            <Link href="https://github.com/donnell-f" target="_blank" className="block border-4 rounded-3xl border-gray-700">
                                 <div id="github" className="p-6 m-1 flex flex-col items-center justify-center gap-4 bg-white rounded-2xl">
                                     <img src="/github.png" className="max-w-20" alt="GitHub" />
                                     <span className="font-mono text-xl">donnell-f</span>
@@ -102,10 +107,10 @@ export default function Home() {
                             </Link>
                         </div>
                         <div id="linkedinStyleDiv" className="
-                            bg-gradient-to-tr from-green-100 to-teal-400 rounded-2xl
-                            hover:-translate-y-2 transition-all duration-300 ease-in-out
+                            bg-gray-300/50 rounded-3xl
+                            hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 ease-in-out
                         ">
-                            <Link href="https://www.linkedin.com/in/donnell-fulwiler/" target="_blank">
+                            <Link href="https://www.linkedin.com/in/donnell-fulwiler/" target="_blank" className="block border-4 rounded-3xl border-gray-700">
                                 <div id="linkedin" className="p-6 m-1 flex flex-col items-center justify-center gap-4 bg-white rounded-2xl">
                                     <img src="/linkedin.png" className="max-w-20" alt="LinkedIn" />
                                     <span className="font-mono text-xl">donnell-fulwiler</span>
