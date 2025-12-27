@@ -78,7 +78,7 @@ export default function AboutPage() {
     }, { scope: container });
 
     return (
-        <main ref={container} className="pt-18 max-lg:px-3">
+        <main ref={container} className="py-18 max-lg:px-3">
             <Dither
                 waveColor={[0.5, 0.5, 0.5]}
                 disableAnimation={false}
