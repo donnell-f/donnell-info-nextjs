@@ -4,9 +4,14 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
 import Dither from './Dither';
+import { LuDownload } from "react-icons/lu";
 
 import Image from "next/image";
 import Link from "next/link";
+
+// TODO:
+// -   Add download link for resume!
+// -   Add white background around resume for Donnelly's phone
 
 export default function Home() {
     const container = useRef();
@@ -74,8 +79,16 @@ export default function Home() {
             </section>
             <div id="spacer" className="my-24"></div>
             <section id="resume">
-                <h1 className="text-center text-3xl font-semibold my-8">My Resume</h1>
-                <embed src="donnell_fulwiler_resume.pdf#toolbar=0&navpanes=0" type="application/pdf" className="mx-auto w-full max-w-[900px] aspect-[10/12]"/>
+                <h1 className="text-center text-3xl font-semibold my-8">
+                    My Resume&nbsp;&nbsp;&nbsp;
+                    <Link href="/donnell_fulwiler_resume.pdf" download="donnell_fulwiler_resume.pdf">
+                        <LuDownload className="
+                            inline-block text-4xl
+                            hover:-translate-y-2 duration-200 ease-in-out
+                        "/>
+                    </Link>
+                </h1>
+                <embed src="donnell_fulwiler_resume.pdf#toolbar=0&navpanes=0" type="application/pdf" className="mx-auto w-full max-w-[900px] aspect-[10/12] bg-white"/>
             </section>
             <div id="spacer" className="my-28"></div>
             <section id="socials" className="my-20">

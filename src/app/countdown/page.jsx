@@ -5,11 +5,8 @@ import Dither from "../Dither";
 export default function Countdown() {
     // 1. Initialize state for the remaining time (in milliseconds)
     const [timeLeft, setTimeLeft] = useState(0);
-    const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
-        setIsMounted(true);
-        
         // Target: Dec 31, 2025 20:00 UTC (Midnight in Azerbaijan/UTC+4)
         const targetDate = new Date('2025-12-31T20:00:00Z').getTime();
 
@@ -67,11 +64,7 @@ export default function Countdown() {
                     font-semibold text-center mt-4 tabular-nums text-nowrap
                     text-transparent bg-linear-to-tr from-green-500 to-teal-600 bg-clip-text
                 ">
-                    {isMounted ? (
-                        `${formatTime(hoursPart)}:${formatTime(minutesPart)}:${formatTime(secondsPart)}`
-                    ) : (
-                        "Loading..." // Or "00:00:00"
-                    )}
+                    {formatTime(hoursPart)}:{formatTime(minutesPart)}:{formatTime(secondsPart)}
                 </h3>
                 <p id="azerbijani" className="
                     lg:text-4xl max-lg:text-2xl
