@@ -69,12 +69,15 @@ export default function Home() {
                     bg-[url('/headshot.png')] bg-cover rounded-lg bg-center
                     col-[3/3] row-[2/5]
                 "/>
-                <div id="bioText" className="p-8 col-[4/4] row-[4/4]">
-                    <p className="text-center text-xl">Hello, I am Donnell
-                    Fulwiler. I am a thinker, creator, innovator, artist, idea.
-                    You may be wondering why I chose the turquoise theme for this
-                    website. I was actually going to use a blue gradient, but I
-                    didn&apos;t want anyone to think I vibe coded the website.</p>
+                <div id="bioText" className="pl-10 pr-8 pt-5 col-[4/4] row-[4/4]">
+                    <p className="text-center text-xl">
+                    Hi, I&apos;m Donnell! Welcome to my website. I&apos;m
+                    passionate about all things computer science.
+                    I made this site so that I could quickly and easily provide
+                    people with all the networking information they could ever
+                    need from me. Also, I really wanted an excuse to self-host
+                    a website...
+                    </p>
                 </div>
             </section>
             <div id="spacer" className="my-24"></div>
