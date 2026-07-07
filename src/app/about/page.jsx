@@ -95,10 +95,12 @@ export default function AboutPage() {
                 lg:grid-rows-[2rem_minmax(10rem,1fr)_2rem] lg:grid-cols-[minmax(10rem,1fr)_2rem_1fr_2rem]
                 max-lg:grid-rows-[minmax(10rem,1fr)_2rem_minmax(10rem,1fr)] max-lg:grid-cols-[2rem_minmax(10rem,1fr)_2rem]
             ">
-                <div id="heroPic" className="
+                <div id="heroPic"
+                    style={{ backgroundImage: "url('/sailing_pic.jpeg')" }}
+                    className="
                     lg:row-[2/2] lg:col-[1/span_2]
                     max-lg:row-[1/span_2] max-lg:col-[2/2]
-                    bg-[url('/sailing_pic.jpeg')] bg-cover rounded-2xl bg-center min-h-[30rem]
+                    bg-cover rounded-2xl bg-center min-h-[30rem]
                     lg:hover:-translate-x-16
                     max-lg:hover:-translate-y-4
                     transition-all duration-300 ease-in-ou
@@ -126,11 +128,12 @@ export default function AboutPage() {
                 <div id="techPic"
                 onClick={() => window.open("https://github.com/donnell-f/donnell-info-nextjs", "_blank", "noreferrer")}
                 role="link"
+                style={{ backgroundImage: "url('/about_source.png')" }}
                 className="
                     relative group
                     lg:row-[2/2] lg:col-[3/span_2]
                     max-lg:row-[1/span_2] max-lg:col-[2/2]
-                    bg-[url('/about_source.png')] bg-cover rounded-2xl bg-center min-h-[30rem] border-2
+                    bg-cover rounded-2xl bg-center min-h-[30rem] border-2
                     lg:hover:translate-x-16 max-lg:hover:-translate-y-4 hover:cursor-pointer
                     transition-all duration-300 ease-in-out
                     hover:shadow-2xl

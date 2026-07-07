@@ -8,7 +8,10 @@ const navLinks = [
 
 export default function DesktopNav() {
     return (
-        <nav className={`flex items-center bg-[url('/papyrus.png')] px-10`}>
+        <nav
+            style={{ backgroundImage: "url('/papyrus.png')" }}
+            className={`flex items-center px-10`}
+        >
             <Link href="/" id="desktopTitleWrapper" className="
                     group relative
                     inline-flex whitespace-nowrap py-5 px-10 grow-0 -skew-x-16 z-10

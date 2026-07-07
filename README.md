@@ -13,6 +13,8 @@ This is the source code for my personal portfolio site, `donnell.info`. This rep
 
 ## Local Development
 
+Requires Node.js 24 (see `.nvmrc` — run `nvm use` to match).
+
 ```bash
 npm install
 npm run dev

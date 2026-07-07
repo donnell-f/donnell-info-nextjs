@@ -64,9 +64,11 @@ export default function Home() {
                     <h1 className="text-5xl font-semibold text-center">Welcome</h1>
                     <p className="max-lg:hidden text-center text-xl">Welcome to my website!</p>
                 </div>
-                <div id="profilePic" className="
+                <div id="profilePic"
+                    style={{ backgroundImage: "url('/headshot.png')" }}
+                    className="
                     max-lg:mt-8 min-h-[30rem]
-                    bg-[url('/headshot.png')] bg-cover rounded-lg bg-center
+                    bg-cover rounded-lg bg-center
                     col-[3/3] row-[2/5]
                 "/>
                 <div id="bioText" className="pl-10 pr-8 pt-5 col-[4/4] row-[4/4]">
@@ -98,9 +100,11 @@ export default function Home() {
                 <div id="annoyingSectionWrapper" className={`
                     relative overflow-visible p-18
                 `}>
-                    <div id="disembodiedBackground" className="
+                    <div id="disembodiedBackground"
+                        style={{ backgroundImage: "url('/wavy_bridge_blur.svg')" }}
+                        className="
                         absolute left-0 top-0 w-full h-full -z-10
-                        bg-[url('/wavy_bridge_blur.svg')] bg-size-[110%] bg-cover bg-center
+                        bg-size-[110%] bg-cover bg-center
                         opacity-50 blur-xs
                     "/>
                     <div id="annoyingTitleContainer" className="flex items-center justify-center">
