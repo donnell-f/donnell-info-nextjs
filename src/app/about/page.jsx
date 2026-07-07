@@ -4,6 +4,8 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
 import LogoLoop from './LogoLoop';
+
+import { asset } from "@/lib/asset";
 import { LuExternalLink } from "react-icons/lu";
 
 import Dither from '../Dither';
@@ -96,7 +98,7 @@ export default function AboutPage() {
                 max-lg:grid-rows-[minmax(10rem,1fr)_2rem_minmax(10rem,1fr)] max-lg:grid-cols-[2rem_minmax(10rem,1fr)_2rem]
             ">
                 <div id="heroPic"
-                    style={{ backgroundImage: "url('/sailing_pic.jpeg')" }}
+                    style={{ backgroundImage: `url('${asset('/sailing_pic.jpeg')}')` }}
                     className="
                     lg:row-[2/2] lg:col-[1/span_2]
                     max-lg:row-[1/span_2] max-lg:col-[2/2]
@@ -128,7 +130,7 @@ export default function AboutPage() {
                 <div id="techPic"
                 onClick={() => window.open("https://github.com/donnell-f/donnell-info-nextjs", "_blank", "noreferrer")}
                 role="link"
-                style={{ backgroundImage: "url('/about_source.png')" }}
+                style={{ backgroundImage: `url('${asset('/about_source.png')}')` }}
                 className="
                     relative group
                     lg:row-[2/2] lg:col-[3/span_2]

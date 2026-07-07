@@ -8,6 +8,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 import Link from "next/link";
 
+import { asset } from "@/lib/asset";
+
 const navLinks = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -20,7 +22,7 @@ export default function MobileNav() {
 
     return (
         <nav
-            style={{ backgroundImage: "url('/papyrus.png')" }}
+            style={{ backgroundImage: `url('${asset('/papyrus.png')}')` }}
             className="sticky top-0 left-0 w-full z-50 text-white"
         >
             {/* Header part */}
@@ -51,7 +53,7 @@ export default function MobileNav() {
 
             {/* Swoop-down menu part */}
             <div
-                style={{ backgroundImage: "url('/papyrus.png')" }}
+                style={{ backgroundImage: `url('${asset('/papyrus.png')}')` }}
                 className={`
                 absolute top-0 left-0 w-full h-screen
                 flex flex-col items-center justify-center

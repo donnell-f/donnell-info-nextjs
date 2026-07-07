@@ -7,6 +7,8 @@ import Dither from './Dither';
 import { LuDownload } from "react-icons/lu";
 
 import Image from "next/image";
+
+import { asset } from "@/lib/asset";
 import Link from "next/link";
 
 // TODO:
@@ -65,7 +67,7 @@ export default function Home() {
                     <p className="max-lg:hidden text-center text-xl">Welcome to my website!</p>
                 </div>
                 <div id="profilePic"
-                    style={{ backgroundImage: "url('/headshot.png')" }}
+                    style={{ backgroundImage: `url('${asset('/headshot.png')}')` }}
                     className="
                     max-lg:mt-8 min-h-[30rem]
                     bg-cover rounded-lg bg-center
@@ -101,7 +103,7 @@ export default function Home() {
                     relative overflow-visible p-18
                 `}>
                     <div id="disembodiedBackground"
-                        style={{ backgroundImage: "url('/wavy_bridge_blur.svg')" }}
+                        style={{ backgroundImage: `url('${asset('/wavy_bridge_blur.svg')}')` }}
                         className="
                         absolute left-0 top-0 w-full h-full -z-10
                         bg-size-[110%] bg-cover bg-center
@@ -121,7 +123,7 @@ export default function Home() {
                         ">
                             <Link href="https://github.com/donnell-f" target="_blank" className="block border-4 rounded-3xl border-gray-700">
                                 <div id="github" className="p-6 m-1 flex flex-col items-center justify-center gap-4 bg-white rounded-2xl">
-                                    <img src="/github.png" className="max-w-20" alt="GitHub" />
+                                    <img src={asset("/github.png")} className="max-w-20" alt="GitHub" />
                                     <span className="font-mono text-xl text-nowrap">donnell-f</span>
                                 </div>
                             </Link>
@@ -132,7 +134,7 @@ export default function Home() {
                         ">
                             <Link href="https://www.linkedin.com/in/donnell-fulwiler/" target="_blank" className="block border-4 rounded-3xl border-gray-700">
                                 <div id="linkedin" className="p-6 m-1 flex flex-col items-center justify-center gap-4 bg-white rounded-2xl">
-                                    <img src="/linkedin.png" className="max-w-20" alt="LinkedIn" />
+                                    <img src={asset("/linkedin.png")} className="max-w-20" alt="LinkedIn" />
                                     <span className="font-mono text-xl text-nowrap">donnell-fulwiler</span>
                                 </div>
                             </Link>

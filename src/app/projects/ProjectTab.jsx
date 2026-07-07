@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { LuExternalLink } from "react-icons/lu";
 
+import { asset } from "@/lib/asset";
+
 function DesktopProjectTab({ title, imgSrc, githubLink, direction, skills, ref, children, className}) {
     const isLeft = ( direction === "right" ) ? false : true;
 
@@ -34,7 +36,7 @@ function DesktopProjectTab({ title, imgSrc, githubLink, direction, skills, ref, 
                 id="projectImage"
                 href={githubLink}
                 target="_blank"
-                style={{ backgroundImage: `url('${imgSrc}')` }}
+                style={{ backgroundImage: `url('${asset(imgSrc)}')` }}
                 className="relative block group aspect-square bg-cover bg-center rounded-2xl"
                 >
                     <div id="annoyingLinkContainer" className="
@@ -74,7 +76,7 @@ function MobileProjectTab({ title, imgSrc, githubLink, direction, skills, ref, c
                 id="projectImage"
                 href={githubLink}
                 target="_blank"
-                style={{ backgroundImage: `url('${imgSrc}')` }}
+                style={{ backgroundImage: `url('${asset(imgSrc)}')` }}
                 className="
                     relative block max-w-[min(16rem,100%)] mx-auto rounded-2xl 
                     aspect-square bg-cover bg-center

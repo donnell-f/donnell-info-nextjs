@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { asset } from "@/lib/asset";
+
 const navLinks = [
     { label: "About", href: "/about" },
     { label: "Projects", href: "/projects" },
@@ -9,7 +11,7 @@ const navLinks = [
 export default function DesktopNav() {
     return (
         <nav
-            style={{ backgroundImage: "url('/papyrus.png')" }}
+            style={{ backgroundImage: `url('${asset('/papyrus.png')}')` }}
             className={`flex items-center px-10`}
         >
             <Link href="/" id="desktopTitleWrapper" className="
